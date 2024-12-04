@@ -5,12 +5,8 @@ puts "UC2: Calculate Daily Employee Wage"
 
 wagePerHour = 20
 fullDayHour = 8
-def calculateDailyWage(wagePerHour, fullDayHour)
 
-  dailyWage = wagePerHour * fullDayHour
-  return dailyWage
-end
+dailyWage = wagePerHour * fullDayHour
 
-dailyWage = calculateDailyWage(wagePerHour,fullDayHour)
-puts "Daily wage : #{dailyWage}"
+puts "Daily Employee Wage : $#{dailyWage}"
 
