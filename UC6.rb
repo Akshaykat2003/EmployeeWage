@@ -17,7 +17,7 @@ totalWorkingHours = 0
 totalWorkingDays = 0
 monthlyWages = 0
 
-while totalWorkingHours <workingHoursLimit && totalWorkingDays < workingDaysLimit
+while totalWorkingHours < workingHoursLimit && totalWorkingDays < workingDaysLimit
   totalWorkingDays+=1
 
   range =Random.new
@@ -41,7 +41,7 @@ while totalWorkingHours <workingHoursLimit && totalWorkingDays < workingDaysLimi
     end
 end 
 
-
+puts "Day #{totalWorkingDays}: #{workType}"
 puts "Total working days: #{totalWorkingDays}"
 puts "Total working hours: #{totalWorkingHours}"
 puts "Wage per month: $#{monthlyWages}"
