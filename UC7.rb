@@ -8,7 +8,6 @@ class Employee
     @monthlyWages = 0
   end
 
-  # Calculate daily wages based on type of work
   def dailyWages
     if @type_of_work == 0
       0
@@ -19,10 +18,9 @@ class Employee
     end
   end
 
-  # Calculate monthly wages
   def monthlyWages
     20.times do
-      type = rand(0..2) # Generate random work type for each day
+      type = rand(0..2) 
       if type == 0
         @monthlyWages += 0
       elsif type == 1
@@ -35,7 +33,7 @@ class Employee
   end
 end
 
-# Generate random type_of_work for the employee
+
 type_of_work = rand(0..2)
 employee1 = Employee.new(type_of_work)
 
